@@ -8,5 +8,5 @@ open class BuildVariantApplication : BaseApp() {
         LeakCanary.install(this)
     }
 
-    override fun shouldInit() = !LeakCanary.isInAnalyzerProcess(this)
+    override  fun shouldInit() = !LeakCanary.isInAnalyzerProcess(this)
 }
